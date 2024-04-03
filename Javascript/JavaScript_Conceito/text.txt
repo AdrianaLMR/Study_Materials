@@ -1,0 +1,92 @@
+ //Resumos//
+
+ React native: React Native é um framework para desenvolvimento de aplicativos móveis que utiliza JavaScript e React. Ele permite criar aplicativos nativos para iOS e
+  Android, com ênfase em componentes reutilizáveis e desenvolvimento declarativo. Com suporte a hot reloading e integração com código nativo quando necessário, o React 
+  Native oferece uma abordagem eficiente para o desenvolvimento móvel, permitindo compartilhar código entre as plataformas. Sua comunidade ativa e a capacidade de acessar 
+  funcionalidades nativas fazem dele uma escolha popular para desenvolvedores.
+   pontos-chave resumidos sobre o React Native:
+
+    Desenvolvimento em JavaScript: Utiliza JavaScript para desenvolvimento móvel, facilitando a transição para desenvolvedores web.
+    
+    Componentes Reutilizáveis: Baseado na abordagem de componentes, permitindo a criação de interfaces de usuário modulares e reutilizáveis.
+    
+    Desenvolvimento Declarativo: Adota uma abordagem declarativa para a criação de interfaces de usuário, proporcionando eficiência no desenvolvimento.
+    
+    Hot Reloading: Oferece a funcionalidade de hot reloading para visualização em tempo real das alterações durante o desenvolvimento.
+    
+    Módulos Nativos: Permite a criação de módulos nativos para acessar funcionalidades específicas de cada plataforma quando necessário.
+    
+    Comunidade Ativa: Conta com uma comunidade ativa e uma ampla variedade de bibliotecas para estender funcionalidades.
+    
+    Suporte a Plataformas Múltiplas: Desenvolvimento para iOS e Android a partir de um único código-base, compartilhando a maior parte do código.
+    
+    Integração com Nativos: Possibilita a integração com código nativo para incluir componentes específicos de cada plataforma.
+
+
+
+// -operadores destructuring({}[]) desestruturam(array, objeto) alinhados, e criam variaveis com os atributos ou valores desestruturados.
+// -this é o objeto que está sendo referênciado no contexto(onde o this foi escrita) da execução(dono da função), ele vária de acordo de quem chamou a função é chamada, 
+vária se for uma function normal, mas não vária se for uma arrowFunction, cuidado ao chamar o this e adicionar um atributo dentro do escopo dafunção, pois vai ser o escopo 
+global
+// -this-func bind: Passa o obj que vai ser resolvido no this, (resolve problemas de conflito en os paradigmas funcional e o OO),ao referenciar o this, ele vai ser o elemento
+ pasaado no obj da func bind, uma forma de bular o this quando ele é variavel é transformar o this em uma const.
+// -Não é possiível desestruturar algo undefined ou null
+// -retira das estrutura e atribui a variaveis em uma chamada apenas
+// -Operadores destructuring a partir de uma funcao com parametro array []
+// -Operadores destructuring a partir de uma funcao com obj {}
+//Estudar break point
+
+// A Arrow funtion tem mais poder que o bind porque causa da referencia
+// bind() é utilizada para criar uma nova função que, quando chamada, tem um valor de this pré-definido. Isso é útil em situações em que você deseja garantir que uma função 
+seja chamada com um determinado contexto, independentemente de como ela é chamada.
+
+//array no js é um obj especial com caracteristicas proprias, mas não existe um tipo nativo de dado array, ele organiza os dados por indice(estrutura indexada a partir de um
+ inteiro, inicia no zero), é uma estrutura dinamica, cresce e diminui dinamicamente, os tipos de dados de um array pode variar, por boa pratica usar dados homogeneos, a forma
+  literal é a mais recomendada pra criar um array, alguns metodos alteram os arrays e outros retornam um array novo
+//obs array contantes : nao significa que os dados do array é constante, o enedereço de memória apontanto que é constante e por isso nao pode ser modificado com excessao do 
+conteudo do array
+//Array: Array pode ser percorrido por alguns metodos como o FOREACH, MAP, FILTER, REDUCE
+//Array: O método forEach é uma forma de percorrer cada elemento do array. Ele recebe uma função de callback que será executada para cada elemento do array. Essa função de
+ callback pode receber até três parâmetros: o elemento atual, o índice do elemento atual e o array original.
+//array: Map serve para trasformar um array em outro com o mesmo tamanho mas com os dados transformados, ele é como o for mas com um proprosito, lembrando que o array original não é afetado.\
+// o Filter é usado para filtrar o array(sub array baseado no criterio do filter), o resultado sempre será menor que o array original
+//reduce: O método reduce() em JavaScript é utilizado para reduzir os elementos de um array a um único valor. Ele itera sobre cada elemento do array, 
+aplicando uma função de callback que você fornece, e acumula um resultado. O resultado acumulado é o valor final retornado pela função reduce(),callback: 
+É a função a ser executada em cada elemento do array. Ela recebe até quatro argumentos: acumulador, elementoAtual, índiceAtual e array, initialValue (opcional): 
+É um valor inicial para o acumulador. Se não fornecido, o primeiro elemento do array será usado como o valor inicial do acumulador e a iteração começará a partir do 
+segundo elemento, A função callback que você fornece ao reduce geralmente recebe dois argumentos, o acumulador e o elementoAtual. O acumulador é o valor acumulado até o 
+momento, e o elementoAtual é o elemento atual sendo processado, O reduce tem a ideia de agregar valores.
+
+//Programação Imperativa:
+--Ênfase em Como Fazer: Na programação imperativa, o foco está em descrever como realizar uma tarefa passo a passo.
+O código imperativo é composto por instruções detalhadas que especificam exatamente o que o computador deve fazer em cada etapa.
+--Mutação de Estado: As variáveis são frequentemente usadas e modificadas durante a execução do programa.
+Há um foco na mudança de estado das variáveis para representar o progresso do programa.
+--Controle de Fluxo Explícito: O programador precisa fornecer instruções explícitas de controle de fluxo (como loops e condicionais) para orientar a execução do programa.
+
+//codigo declarativo:Programação Declarativa:
+Ênfase em O Que Fazer:
+
+Na programação declarativa, o foco está em declarar o que deve ser alcançado, sem fornecer instruções passo a passo detalhadas.
+O programador se preocupa mais com o resultado desejado do que com o processo exato para obtê-lo.
+--Imutabilidade: Geralmente, os dados são tratados como imutáveis. Em vez de modificar dados existentes, cria-se novos dados.
+A imutabilidade ajuda a evitar efeitos colaterais inesperados.
+--Abstração de Controle de Fluxo: A abstração de controle de fluxo é frequentemente alcançada usando funções de ordem superior, como map, filter, reduce,
+ que abstraem o controle de fluxo e permitem que o programador se concentre nos dados.
+
+//Metodo concat: 
+O método concat() em JavaScript é utilizado para combinar dois ou mais arrays, criando um novo array resultante da concatenação dos arrays originais. Esse método não
+ modifica os arrays originais, mas sim retorna um novo array contendo os elementos dos arrays concatenados na ordem em que foram passados como argumentos.
+
+
+//Flat map:
+O método flatMap() em JavaScript é uma combinação dos métodos map() e flat(). Ele é utilizado para mapear cada elemento de um array usando uma função de callback e,
+ em seguida, achatá-lo em um novo array. O resultado final é um array unidimensional que é o resultado da aplicação da função de mapeamento e achatamento a cada
+elemento do array original.
+Além disso, é importante notar que o método flatMap() remove automaticamente os valores undefined e os achatamentos desnecessários. Isso ocorre porque o método flat()
+ utilizado internamente remove elementos indefinidos e achatamentos extras.
+O flatMap() é útil quando você precisa mapear os elementos de um array e, ao mesmo tempo, quer evitar arrays aninhados indesejados.
+
+Extras:
+Terminais: https://blog.cod3r.com.br/terminal-no-windows/
+
