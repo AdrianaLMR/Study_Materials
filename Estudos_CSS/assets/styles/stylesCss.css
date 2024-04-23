@@ -1,0 +1,78 @@
+* {
+    padding: 10px 3%;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cec5da;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin: 0 0 20px;
+    padding: 0 0 0 40px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para as listas de definição */
+dl {
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* Estilos específicos para a lista de combinadores */
+.lista_combinadores {
+    margin-left: 20px;
+}
+
+#title-exe {
+    color: red;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#img-layout-resposivo {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.move-tartaruga {
+    width: 200px;
+    animation: moveLeft 2s linear infinite alternate; /* Adiciona a animação */
+}
+
+@keyframes moveLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }

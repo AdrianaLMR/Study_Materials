@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/stylesCss.css">
+    <title>Material de estudo de CSS</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Fundamentos do CSS</h1>
+
+        <p>
+            O CSS ou Cascading Style sheets ou folha de estilo em cascata, é utilizado para adicionar
+            estilos em uma página da web, ele determina como os elementos e o layout da página devem ser exibidos no
+            navegador.
+        </p>
+        <p>
+            Ele foi criado em 1994 pelo Hako Wium Lie com o objetivo de facilitar a programação dos sites. O CSS muitas
+            vezes é considerado uma linguagem de marcação ou até mesmo uma linguagem de programação, mas ele não é
+            nenhuma
+            das duas.
+            O CSS é considerado uma linguagem de estilo, com ele podemos criar muitas coisas como os layouts, animações,
+            páginas web, contadores e muito mais, para fazer tudo isso ele deve possuir propriedades e seus valores.
+            As propriedades são características de um elemento do HTML, como a largura, altura e cor, etc, já os valores
+            é a
+            definição do resultado da propriedade e como ele deve ser exibido no navegador.
+        </p>
+
+        <h2>Sintase CSS</h2>
+
+        <p>
+            A sintaxe do CSS consiste em seletor, propriedade e valor. O seletor é usado para selecionar os elementos
+            HTML aos quais você deseja aplicar estilos. A propriedade define qual característica do elemento você deseja
+            estilizar, e o valor especifica como essa característica deve ser estilizada.
+        </p>
+
+        <h2>Formas de declaração do CSS</h2>
+
+        <p>
+            Existem três formas de declarar o CSS, são elas: CSS Inline, CSS interno e CSS externo.
+        <ol>
+            <li>CSS Inline: Adicionamos o código CSS utilizando o atributo style dentro das tags HTML, elemento por
+                elemento.</li>
+            <br>
+            <li>CSS Interno: O código CSS é adicionado dentro da tag head da página HTML, dentro da tag head adicionamos
+                outra tag a style e lá colocamos as regras CSS.</li>
+            <br>
+            <li>CSS Externo: É criado um arquivo com a extensão .css, com todas as regras CSS da nossa página e esse
+                arquivo
+                será referenciado na nossa página HTML com a tag link dentro da tag head.</li>
+        </ol>
+        </p>
+
+        <h2>Seletores do CSS</h2>
+
+        <p>
+            Os seletores determinam em quais elementos vamos adicionar as propriedades e valores CSS, existem vários
+            tipos de
+            seletores e vamos abordá-los aqui, então vamos lá:
+        <ol>
+            <li>Seletor de tag: É conhecido como seletor de tipos, ele busca elementos por uma tag HTML específica.</li>
+            <li>Seletor ID(#): Busca elementos através do atributo "id".</li>
+            <li>Seletor por classe(.): Busca elementos através do atributo "class".</li>
+            <li>Seletor universal(*): Seleciona todos os elementos HTML.</li>
+            <li>Seletor de atributo ([atrib]): Seleciona elementos que possuem um atributo específico em nosso documento
+                HTML e conseguimos também buscar atributos com um valor específico.</li>
+        </ol>
+        </p>
+        <p>
+            Podemos aplicar as regras CSS para agrupar vários seletores diferentes basta separar os elementos por uma
+            vírgula, fazendo isso evitamos copiar e colar os mesmos códigos já feitos, reutilizando as mesmas regras.
+        </p>
+
+        <h2>Os combinadores</h2>
+
+        <p>
+            Ele especifica qual o tipo de relação entre os seletores, entre dois id, entre duas classes ou entre dois
+            parágrafos.
+        <ol class="lista_combinadores">
+            <li>Combinador descendentes(espaço): existem os combinadores descendentes, ele é utilizado para aplicar
+                propriedades
+                CSS somente
+                em elementos que são descendentes de outros elementos específicos, buscamos o seletor que é filho de
+                outro
+                seletor. Para entender melhor vamos explicar os combinadores.
+            </li><br>
+            <li>Combinador filho(>): Seleciona os filhos imediatos, que é um filho direto do elemento, que está
+                especificado
+                a esquerda;</li>
+            <li>Combinador irmão adjacente(+): É utilizado para selecionar um elemento que está diretamente depois do
+                seletor
+                que é definido na esquerda;</li>
+            <li>Combinador irmão em geral (~): Ele pode ser usado em irmãos, não sendo necessariamente diretos ou
+                indiretos
+                dos elementos;</li>
+        </ol>
+        </p>
+
+        <h2>Altura e Largura</h2>
+
+        <p>Logo após inserirmos o valor das propriedades precisamos passar a unidade de medida, para isso podemos usar,
+            cm,
+            px, % e pontos. Temos algumas palavras chaves que podemos utilizar, a palavra auto vai determinar uma altura
+            ou
+            largura automática se utilizada nessas propriedades, como em outras propriedades. A palavra Initial aplica a
+            propriedade que tem como padrão, que seria o valor inicial.</p>
+        <p>
+            Propriedade altura(height);
+        </p>
+        <p>
+            Propriedade largura(width);
+        </p>
+
+        <h2>Margin</h2>
+
+        <p>Propriedade que cria um espaçamento ao redor dos elementos que é aplicado por fora, podemos definir as
+            margens
+            com propriedades individuais para cada do elemento ou utilizar uma propriedade apenas, na margem podemos
+            utilizar formas de expressar o valor em cm, px, % entre outros. Quando utilizamos apenas a palavra margin e
+            atribuímos um valor apenas, automaticamente esse valor será adicionado aos lados do elemento, se
+            adicionarmos
+            dois valores, o primeiro valor será adicionado ao topo e abaixo do elemento, o segundo valor será adicionado
+            aos
+            lados: esquerda e direita.</p>
+        <p>No caso de três valores adicionados, o primeiro valor será aplicado no topo do elemento, o segundo valor será
+            para
+            as laterais e o último valor será abaixo do elemento. Quando temos quatro valores, cada um deles é
+            adicionado a
+            um lado do elemento, a forma mais simples de decorar a ordem dos valores é lembrar de seguir o sentido
+            horário.
+            Através da margem também podemos aplicar valores negativos. </p>
+        <ul>
+            <li>Margin-top: Margem do top do elemento.</li>
+            <li>Margin-bottom: Margem abaixo do elemento.</li>
+            <li>Margin-left: Margem a esquerda do elemento.</li>
+            <li>Margin-right: Margem a direita do elemento.</li>
+        </ul>
+
+        <h2>Padding</h2>
+
+        <p>
+            Responsável por aplicar espaçamento interno nos elementos, ele funciona igual a margem mas de forma
+            diferente, a
+            ordem de aplicação e valores negativos para quantidades de valores diferentes também é igual.
+        </p>
+        <ul>
+            <li>Padding-top: Margem do top do elemento.</li>
+            <li>Padding-bottom: Margem abaixo do elemento.</li>
+            <li>Padding-left: Margem a esquerda do elemento.</li>
+            <li>Padding-right: Margem a direita do elemento.</li>
+        </ul>
+
+        <h2>Box Sizing</h2>
+
+        <p>
+            A propriedade box-sizing aceita dois valores que são: content-box, que soma o valor do padding e a largura
+            do
+            elemento que definimos, o segundo valor é o border-box redimensiona o conteúdo do nosso elemento, somando as
+            bordas desse elemento.
+        </p>
+
+        <h2>Formas de definir as cores</h2>
+
+        <p>Podemos definir as cores por uma variedade de opções: cores pré-definidas, palavra-chave "currentcolor",
+            hexadecimal, hexadecimal com transparência, RGB, RGBA, HSL, HSLA.</p>
+        <ul>
+            <li id="cores_pre-definidas">Cores pré-definidas</li>
+            <li id="currentcolor">Palavra-chave "currentcolor"</li>
+            <li id="hexadecimal">Hexadecimal</li>
+            <li id="hexadecimal_transparência">Hexadecimal com transparência</li>
+            <li id="RGB">RGB</li>
+            <li id="RGBA">RGBA</li>
+            <li id="HSL">HSL</li>
+            <li id="HSLA">HSLA</li>
+        </ul>
+
+        <h2>Box model</h2>
+
+        <p>
+            O modelo de caixa (box model) em CSS é uma representação fundamental que descreve como os elementos HTML são
+            renderizados na página web. Ele consiste em quatro componentes principais: conteúdo (content), preenchimento
+            (padding), borda (border) e margem (margin).
+        </p>
+        <p>
+            Conteúdo (Content): É a área dentro do elemento que contém o conteúdo real, como texto, imagens, vídeos,
+            etc.
+            A largura e altura do elemento são definidas pelo tamanho do conteúdo, juntamente com o preenchimento, borda
+            e margem.
+        </p>
+        <p>
+            Preenchimento (Padding): É a área transparente ao redor do conteúdo, dentro da borda do elemento. O
+            preenchimento é usado para criar espaço entre o conteúdo e a borda. Ele pode ser especificado
+            individualmente para cada lado do elemento (top, right, bottom, left), ou de uma vez usando a propriedade
+            padding.
+        </p>
+        <p>
+            Borda (Border): É a linha que envolve o conteúdo e o preenchimento do elemento. Ela é usada para definir o
+            limite físico do elemento e pode ter diferentes estilos, cores e espessuras. A borda é definida pela
+            propriedade border.
+        </p>
+        <p>
+            Margem (Margin): É a área transparente fora da borda do elemento. A margem é usada para criar espaço entre
+            os
+            elementos vizinhos na página. Assim como o preenchimento, a margem pode ser especificada individualmente
+            para cada lado do elemento ou de uma vez usando a propriedade margin.
+        </p>
+
+        <h2>Conhecimentos neessários sobre CSS</h2>
+
+        <dl>
+            <dt><strong>Seletores CSS:</strong></dt>
+            <dd>São padrões usados para selecionar e estilizar elementos HTML em uma página. Existem vários tipos de seletores, incluindo seletores de elementos (como p para parágrafos), seletores de classe (como .classe), seletores de ID (como #id), seletores descendentes (como div p para selecionar todos os parágrafos dentro de divs), seletores de atributos (como [type="text"] para selecionar elementos com determinado atributo), entre outros.</dd>
+            <dt><strong>Propriedades CSS:</strong></dt>
+            <dd>São características que podem ser aplicadas a elementos HTML para definir sua aparência e comportamento. As propriedades CSS comuns incluem cor, fonte, tamanho, margem, preenchimento, borda, posicionamento, exibição, entre outras.</dd>
+            <dt><strong>Modelo de Caixa (Box Model):</strong></dt>
+            <dd>É um conceito que descreve como os elementos HTML são representados visualmente na página. Ele consiste em quatro partes: conteúdo (o próprio conteúdo do elemento), preenchimento (espaço entre o conteúdo e a borda), borda (limite do elemento) e margem (espaço entre o elemento e outros elementos vizinhos).</dd>
+            <dt><strong>Posicionamento:</strong></dt>
+            <dd>Refere-se à forma como os elementos são posicionados na página. Existem quatro tipos principais de posicionamento em CSS: estático (o padrão), relativo (posicionamento em relação à posição original), absoluto (posicionamento em relação ao elemento pai) e fixo (posicionamento em relação à janela de visualização).</dd>
+            <dt><strong>Flexbox e Grid:</strong></dt>
+            <dd>São técnicas de layout em CSS que permitem criar layouts responsivos e flexíveis. O Flexbox é mais adequado para layouts unidimensionais, enquanto o Grid é ideal para layouts bidimensionais. Ambos oferecem controle preciso sobre o posicionamento e o dimensionamento dos elementos.</dd>
+            <dt><strong>Media Queries:</strong></dt>
+            <dd>São regras em CSS que permitem aplicar estilos diferentes com base nas características do dispositivo, como largura da tela, orientação e resolução. Elas são usadas para criar designs responsivos que se ajustam automaticamente a diferentes tamanhos de tela e dispositivos.</dd>
+            <dt><strong>Animações e Transições:</strong></dt>
+            <dd>São recursos do CSS que permitem adicionar movimento e interatividade aos elementos HTML. As transições suavizam as mudanças de estilo ao longo do tempo, enquanto as animações permitem criar efeitos mais complexos com controle total sobre o tempo e a trajetória da animação.</dd>
+            <dt><strong>Transformações:</strong></dt>
+            <dd>São propriedades do CSS que permitem aplicar efeitos de transformação, como rotação, escala, translação e inclinação, aos elementos HTML. Elas são úteis para criar efeitos visuais interessantes e modificar a aparência dos elementos de forma dinâmica.</dd>
+            <dt><strong>Tipografia:</strong></dt>
+            <dd>Refere-se ao estilo e formatação do texto em uma página web. As propriedades CSS relacionadas à tipografia incluem font-family (família de fontes), font-size (tamanho da fonte), font-weight (espessura da fonte), line-height (altura da linha) e text-align (alinhamento do texto).</dd>
+            <dt><strong>Pseudoclasses e Pseudoelementos:</strong></dt>
+            <dd>São seletores especiais em CSS que permitem estilizar elementos com base em estados ou características específicas. As pseudoclasses, como :hover e :active, são usadas para estilizar elementos em resposta a interações do usuário, enquanto os pseudoelementos, como ::before e ::after, são usados para adicionar conteúdo extra a elementos HTML.</dd>
+            <dt><strong>Preprocessadores CSS:</strong></dt>
+            <dd>São ferramentas que estendem a sintaxe padrão do CSS, permitindo recursos como variáveis, mixins, aninhamento e herança. Exemplos comuns de preprocessadores CSS incluem Sass e Less, que ajudam a tornar o código CSS mais modular, reutilizável e fácil de manter.</dd>
+            <dt><strong>Boas Práticas:</strong></dt>
+            <dd>Refere-se às diretrizes recomendadas para escrever código CSS de alta qualidade e fácil manutenção. Isso inclui práticas como organização de código, nomeação de classes significativas, modularidade, consistência no estilo, otimização de desempenho e garantia de compatibilidade entre navegadores. Seguir boas práticas ajuda a criar código CSS mais limpo, eficiente e escalável.</dd>
+        </dl>
+
+        <h2>Exempolo de css</h2>
+
+        <h3>Exemplo de animação com CSS</h3>
+        <img class="move-tartaruga" src="assets/img/img-tartaruga.png" alt="Imagem de uma tartaruga">
+
+        <h3>Exemplo de um título</h3>
+        <h2 id="title-exe">Título de exemplo</h2>
+
+        <h3>Exemplo de edição de imagem e posicionamento</h3>
+        <img id="img-layout-resposivo" src="assets/img/img-layout-responsivo.png" alt="Imagem de layout responsivo em diferentes dispositivos">
+    </div>
+</body>
+
+</html>

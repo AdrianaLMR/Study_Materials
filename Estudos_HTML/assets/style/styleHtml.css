@@ -1,0 +1,85 @@
+* {
+    padding: 10px 3%;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    height: auto; 
+    border: 2px solid black; 
+}
+
+#exe-iframe {
+   margin-left: 15%;
+   width: 500px;
+   height: 300px;
+   border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cec5da;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img_border-none{
+    border:none; 
+}
+
+.list-conceitos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-conceitos li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.list-conceitos li p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.list-layouts {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-layouts li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.list-layouts li p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+a {
+    color: purple; /* Define a cor do texto para roxo */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado quando o mouse passa por cima */
+}
